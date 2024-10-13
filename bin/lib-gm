@@ -578,7 +578,8 @@ get_hdpath() {
 get_staking_denom() {
   NETWORK="$(get_chain_id "$1")"
   NETWORK_HOME_DIR="$(get_home_dir "$NETWORK")"
-  stoml "${NETWORK_HOME_DIR}/config/genesis.json" app_state.staking.params.bond_denom
+  #stoml "${NETWORK_HOME_DIR}/config/genesis.json" app_message.staking.params.bond_denom
+  echo "stake"
 }
 
 get_wallet_account_prefix() {
