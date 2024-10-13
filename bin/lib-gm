@@ -698,6 +698,7 @@ configure() {
   sconfig "$HOME_DIR/config/config.toml" "p2p.laddr=tcp://0.0.0.0:${P2P}" 1> /dev/null
   sconfig "$HOME_DIR/config/config.toml" "rpc.laddr=tcp://0.0.0.0:${RPC}" 1> /dev/null
   sconfig "$HOME_DIR/config/config.toml" "rpc.pprof_laddr=0.0.0.0:${PPROF}" 1> /dev/null
+  sconfig "$HOME_DIR/config/app.toml" "minimum-gas-prices=0stake" 1> /dev/null
   sconfig "$HOME_DIR/config/app.toml" "api.address=tcp://0.0.0.0:${APP}" 1> /dev/null
   sconfig "$HOME_DIR/config/app.toml" "api.enable=true" 1> /dev/null
   sconfig "$HOME_DIR/config/app.toml" "api.swagger=true" 1> /dev/null
